@@ -1,0 +1,32 @@
+{
+  "HarmonyId": "doggielicc.gamebrowserlistrandomizer",
+  "DisplayName": "GameBrowserListRandomizer",
+  "Authors": [
+    "DoggieLicc"
+  ],
+  "Description": "A simple mod that randomizes the rolelist in the game browser. Hold shift while clicking a gamemode to view the actual list.",
+  "Version": "1.0.0",
+  "RequiredMods": [],
+  "Settings": {
+    "CheckboxSettings": [
+    ],
+    "TextInputSettings": [
+    ],
+    "IntegerInputSettings": [
+      {
+        "Name": "# of roles in list",
+        "Description": "How many roles to place in the randomized list.",
+        "DefaultValue": 15,
+        "MinValue": 0,
+        "MaxValue": 15,
+        "AvailableInGame": true
+      }
+    ],
+    "SliderSettings": [
+    ],
+    "DropdownSettings": [
+    ],
+    "ColorPickerSettings": [
+    ]
+  }
+}

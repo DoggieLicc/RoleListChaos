@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="modinfo.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="modinfo.json" />
+    <None Remove="resources\images\thumbnail.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TownieLib\TownieLib.csproj" />
+    <EmbeddedResource Include="resources\images\thumbnail.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>lib/Managed/Assembly-CSharp.dll</HintPath>
+    </Reference>
+        
+        <Reference Include="0Harmony">
+      <HintPath>lib/BepInEx/core/0Harmony.dll</HintPath>
+    </Reference>
+
+    <Reference Include="BepinEx">
+      <HintPath>lib/BepInEx/core/BepInEx.dll</HintPath>
+    </Reference>
+
+    <Reference Include="SalemModLoader">
+      <HintPath>lib/BepInEx/plugins/SalemModLoader.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine">
+      <HintPath>lib/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>lib/Managed/UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>lib/Managed/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+
+  </ItemGroup>
+
+</Project>
+
