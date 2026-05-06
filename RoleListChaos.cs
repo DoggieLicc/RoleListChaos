@@ -11,18 +11,18 @@ using Server.Shared.State;
 using Home.GameBrowser;
 using BetterTOS2;
 
-namespace GameBrowserListRandomizer
+namespace RoleListChaos
 {
 
     [SML.Mod.SalemMod]
-    public class GameBrowserListRandomizer
+    public class RoleListChaos
     {
 
         public void Start()
         {
             try
             {
-                Harmony.CreateAndPatchAll(typeof(GameBrowserListRandomizer));
+                Harmony.CreateAndPatchAll(typeof(RoleListChaos));
             }
             catch (Exception e)
             {
