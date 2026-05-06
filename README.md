@@ -1,8 +1,10 @@
 ﻿# GameBrowserListRandomizer
-A simple Town of Salem 2 mod that randomizes the rolelist in the game browser every time you click it.
+A simple Town of Salem 2 mod that randomizes the rolelist in the game browser, and in-game (if enabled)
 
- - Hold shift while clicking to reveal the actual list
+ - Hold shift while clicking a list to reveal the actual list (not ingame)
  - Change the number of roles in the mod's settings
  - Purely visual ofc, was just made for fun/learning :)
- 
-![Example of random list, we even have None here!](https://doggieli.cc/assets/images/screen.jpg)
+
+> "What the fuck is this?" - a peer
+
+![Example of random list](https://doggieli.cc/assets/images/randomdecks1.png)

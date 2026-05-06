@@ -1,24 +1,30 @@
 {
-  "HarmonyId": "doggielicc.gamebrowserlistrandomizer",
-  "DisplayName": "GameBrowserListRandomizer",
+  "HarmonyId": "doggielicc.rolelistchaos",
+  "DisplayName": "RoleListChaos",
   "Authors": [
     "DoggieLicc"
   ],
-  "Description": "A simple mod that randomizes the rolelist in the game browser. Hold shift while clicking a gamemode to view the actual list.",
-  "Version": "1.0.0",
+  "Description": "A simple mod that randomizes the rolelist (only visually). Hold shift while clicking a gamemode to view the actual list.",
+  "Version": "1.1.0",
   "RequiredMods": [],
   "Settings": {
     "CheckboxSettings": [
+      {
+        "Name": "Randomize In-Game",
+        "Description": "Randomize roledecks while in-game too, will decrease amount of playability drastically... use with caution.",
+        "DefaultValue": false,
+        "AvailableInGame": true
+      }
     ],
     "TextInputSettings": [
     ],
     "IntegerInputSettings": [
       {
         "Name": "# of roles in list",
-        "Description": "How many roles to place in the randomized list.",
+        "Description": "How many roles to place in the randomized list. Values above 15 may cause problems.",
         "DefaultValue": 15,
         "MinValue": 0,
-        "MaxValue": 15,
+        "MaxValue": 9999,
         "AvailableInGame": true
       }
     ],
