@@ -50,18 +50,28 @@ namespace GameBrowserListRandomizer
             Array roles = Enum.GetValues(typeof(Role));
             Array factions = getFactions();
             int numRoles = ModSettings.GetInt("# of roles in list");
+            int dualBucketPercentage = ModSettings.GetInt("Dual-Bucket %");
 
             for (int i = 0; i < numRoles; i++)
             {
+                bool isDualBucket = false;
+                if (rand.Next(100) < dualBucketPercentage) isDualBucket = true;
+
                 Role randRole1 = (Role)roles.GetValue(rand.Next(roles.Length));
                 while (!checkRole(randRole1)) randRole1 = (Role)roles.GetValue(rand.Next(roles.Length));
-                Role randRole2 = (Role)roles.GetValue(rand.Next(roles.Length));
-                while (!checkRole(randRole2)) randRole2 = (Role)roles.GetValue(rand.Next(roles.Length));
                 FactionType randFaction1 = (FactionType)factions.GetValue(rand.Next(factions.Length));
                 while (!checkFaction(randFaction1)) randFaction1 = (FactionType)factions.GetValue(rand.Next(factions.Length));
-                FactionType randFaction2 = (FactionType)factions.GetValue(rand.Next(factions.Length));
-                while (!checkFaction(randFaction2)) randFaction2 = (FactionType)factions.GetValue(rand.Next(factions.Length));
+                
+                Role randRole2 = Role.NONE;
+                FactionType randFaction2 = FactionType.NONE;
 
+                if (isDualBucket)
+                {
+                    randRole2 = (Role)roles.GetValue(rand.Next(roles.Length));
+                    while (!checkRole(randRole2)) randRole2 = (Role)roles.GetValue(rand.Next(roles.Length));
+                    randFaction2 = (FactionType)factions.GetValue(rand.Next(factions.Length));
+                    while (!checkFaction(randFaction2)) randFaction2 = (FactionType)factions.GetValue(rand.Next(factions.Length));
+                }
                 returnDeck.Add(new RoleDeckSlot(randRole1, randRole2, randFaction1, randFaction2));
             }
 

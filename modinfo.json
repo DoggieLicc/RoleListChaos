@@ -6,6 +6,7 @@
   ],
   "Description": "A simple mod that randomizes the rolelist (only visually). Hold shift while clicking a gamemode to view the actual list.",
   "Version": "1.1.0",
+  "Discord": "https://discord.gg/d7dgReCnRR",
   "RequiredMods": [],
   "Settings": {
     "CheckboxSettings": [
@@ -25,6 +26,14 @@
         "DefaultValue": 15,
         "MinValue": 0,
         "MaxValue": 9999,
+        "AvailableInGame": true
+      },
+      {
+        "Name": "Dual-Bucket %",
+        "Description": "Chance of a random slot being a dual-bucket",
+        "DefaultValue": 100,
+        "MinValue": 0,
+        "MaxValue": 100,
         "AvailableInGame": true
       }
     ],

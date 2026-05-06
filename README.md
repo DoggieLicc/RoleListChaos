@@ -1,4 +1,4 @@
-﻿# GameBrowserListRandomizer
+﻿# RoleListChaos
 A simple Town of Salem 2 mod that randomizes the rolelist in the game browser, and in-game (if enabled)
 
  - Hold shift while clicking a list to reveal the actual list (not ingame)
