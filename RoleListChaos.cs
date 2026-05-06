@@ -40,6 +40,8 @@ namespace RoleListChaos
         {
             GamePhase gamePhase = Pepper.GetGamePhase();
 
+            if (ModSettings.GetBool("Disable Chaos")) return true;
+
             if (!ModSettings.GetBool("Randomize In-Game") && (gamePhase == GamePhase.PICK_NAMES || gamePhase == GamePhase.PLAY || gamePhase == GamePhase.CASUAL_VOTE)) return true;
 
             if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) return true;

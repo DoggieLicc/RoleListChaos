@@ -15,6 +15,12 @@
         "Description": "Randomize roledecks while in-game too, will decrease amount of playability drastically... use with caution.",
         "DefaultValue": false,
         "AvailableInGame": true
+      },
+      {
+        "Name": "Disable Chaos",
+        "Description": "Disable the mod without needing to restart your game.",
+        "DefaultValue": false,
+        "AvailableInGame": true
       }
     ],
     "TextInputSettings": [
